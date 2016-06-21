@@ -1,0 +1,380 @@
+/*button-style---start*/
+.button{
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    font-size:14px;
+    text-decoration: none;
+    text-transform: none;
+    text-shadow: none;
+    cursor: pointer;
+    vertical-align: baseline;
+    min-height: 18px;
+    padding: 10px 20px;
+    line-height: 18px;
+    outline: none;
+    background: #e0e1e2 none;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+            transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+}
+.button:hover {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #cacbcd;
+    background-image: none;
+    box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+}
+.btn-disabled{
+    cursor: default;
+    opacity: 0.45 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    pointer-events: none;
+}
+/*btn-color --- start*/
+.btn-orange{
+    color: #fff;
+    text-shadow: none;
+    background-color: #f2711c;
+    background-image: none;
+    box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+}
+.btn-orange:focus{
+    color: #fff;
+    text-shadow: none;
+    background-color: #e55b00;
+}
+.btn-orange:hover{
+    color: #fff;
+    text-shadow: none;
+    background-color: #f26202;
+}
+
+.btn-blue{
+    color: #fff;
+    text-shadow: none;
+    background-color: #2185d0;
+    background-image: none;
+    box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+}
+.btn-blue:hover {
+    color: #fff;
+    text-shadow: none;
+    background-color: #1678c2;
+  
+}
+.btn-blue:focus {
+    color: #fff;
+    text-shadow: none;
+    background-color: #0d71bb;
+}
+
+.btn-green{
+    color: #fff;
+    text-shadow: none;
+    background-color: #21ba45;
+    background-image: none;
+    box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+}
+.btn-green:hover{
+    color: #fff;
+    text-shadow: none;
+    background-color: #16ab39;
+}
+.btn-green:focus {
+    color: #fff;
+    text-shadow: none;
+    background-color: #0ea432;
+}
+
+.btn-red {
+    color: #fff;
+    text-shadow: none;
+    background-color: #db2828;
+    background-image: none;
+    box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+}
+.btn-red:hover {
+    color: #fff;
+    text-shadow: none;
+    background-color: #d01919;
+}
+.btn-red:focus {
+    color: #fff;
+    text-shadow: none;
+    background-color: #ca1010;
+}
+
+.btn-gray{
+    color: #fff;
+    text-shadow: none;
+    background-color: #767676;
+    background-image: none;
+    box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
+}
+.btn-gray:hover{
+    color:#fff;
+    text-shadow: none;
+    background-color:#838383;
+}
+.btn-gray:focus{
+    color:#fff;
+    text-shadow: none;
+    background-color:#8a8a8a;
+}
+
+/*btn-color --- end*/
+
+.btn-fluid{
+    display:block;
+    width:100%;
+}
+
+.btn-load{
+    position: relative;
+    color: transparent !important;
+    text-shadow: none !important;
+    cursor: default;
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transition: all 0s linear, opacity 0.1s ease;
+            transition: all 0s linear, opacity 0.1s ease;
+}
+.btn-load:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  margin: -0.64285714em 0em 0em -0.64285714em;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+}
+.btn-load:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  margin: -0.64285714em 0em 0em -0.64285714em;
+  width: 16px;
+  height: 16px;
+  -webkit-animation: button-spin 0.6s linear;
+          animation: button-spin 0.6s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 16px;
+  border-color: #ffffff transparent transparent;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0px 0px 0px 1px transparent;
+}
+@-webkit-keyframes button-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes button-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*btn-size ----start */
+.btn-large{
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.btn-middle{
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+.btn-small{
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+.btn-tiny{
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.btn-mini{
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+/*btn-size ----end */
+
+/*button-style---end*/
+
+/*confirmModal---start*/
+.confirmModal-mask {
+    box-sizing: content-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    color: #272b34;
+    font-size: 1rem;
+    z-index: 99;
+    background:rgba(0,0,0,.85);
+    visibility:visible;
+    opacity: .85;
+}
+.confirmModal-wrap {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 60px 0;
+    z-index: 99;
+	opacity: 1;
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.confirmModal{
+    width:520px;
+}
+.confirmModal-content{
+    position: relative;
+    background-color: #fff;
+    border: 0;
+    border-radius: 6px;
+    background-clip: padding-box;
+    width:100%;
+}
+.confirmModal-close{
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    z-index: 10;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    color: #CCD5DA;
+    outline: 0;
+}
+.confirmModal-close-x{
+    display: block;
+    width: 26px;
+    height: 26px;
+    font-size: 26px;
+    line-height: 1;
+}
+.confirmModal-close-x:hover{
+    color: #6F9FF8;
+}
+.confirmModal-header {
+    padding: 15px 40px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+}
+.confirmModal-title {
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #99aab5;
+    text-transform: uppercase;
+}
+.confirmModal-body {
+    font-size: 12px;
+    padding:28px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #87909c;
+}
+.confirmModal-footer {
+    width: 100%;
+    padding: 10px 40px;
+    text-align: right;
+    border-radius: 0 0 5px 5px;
+    background:#f9f9f9;
+    border-top:1px solid #f0f0f0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+.confirmModal-footer button{
+    margin-left:15px;
+}
+.confirmModal-footer .button.btn-cancel{
+	background:none;
+	color: #999;
+	padding:0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+	border-radius: 0;
+}
+.confirmModal-footer .button.btn-cancel:hover{
+	color: #4281F4;
+    border-bottom-color: #4281F4;
+}
+/*confirmModal---end*/
+/*动画--start*/
+.eventModal-enter {
+	opacity: 0;
+    transition: all 0.2s;
+}
+.eventModal-enter .confirmModal-wrap{
+	transform: scale(0);
+	transition-timing-function:linear;
+	transition: all 0.2s;
+}
+
+.eventModal-enter.eventModal-enter-active {
+    opacity: 1;
+}
+.eventModal-enter-active .confirmModal-wrap{
+	transform: scale(1);
+}
+
+.eventModal-leave,
+.eventModal-leave .confirmModal-wrap{
+	transform: scale(1) ease-in;
+	transition: all .2s;
+}
+.eventModal-leave.eventModal-leave-active,
+.eventModal-leave.eventModal-leave-active .confirmModal-wrap{
+    opacity: 0;
+	transform: scale(0);
+}
+
+/*动画--end*/

@@ -1,0 +1,2 @@
+export const SHOW_CONFMODAL  = 'SHOW_CONFMODAL'
+export const HIDE_CONFMODAL  = 'HIDE_CONFMODAL'
